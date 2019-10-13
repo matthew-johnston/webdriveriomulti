@@ -15,6 +15,8 @@ const config: WebdriverIO.Config = {
 
    specs: [ "./build~~/tests/**/*.js" ],
 
+   services: [ "selenium-standalone" ],
+
    capabilities: {
       primaryBrowser: chrome,
       secondaryBrowser: chrome,
