@@ -1,0 +1,9 @@
+{
+   "search.exclude": {
+      "**/node_modules": true,
+      "**/build~~": true
+   },
+   "editor.detectIndentation": false,
+   "editor.tabSize": 3,
+   "editor.insertSpaces": true
+}

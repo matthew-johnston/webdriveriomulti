@@ -1,0 +1,18 @@
+{
+   "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "sourceMap": true,
+      "outDir": "build~~/",
+      "types": ["node", "@types/jasmine", "@wdio/jasmine-framework", "@wdio/sync", "./types"]
+   },
+   "compileOnSave": false,
+   "buildOnSave": false,
+   "exclude": ["node_modules", "build~~"]
+}

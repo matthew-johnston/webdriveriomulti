@@ -1,0 +1,16 @@
+seleniumhub:
+  image: selenium/hub
+  ports:
+    - 4444:4444
+  environment:
+    GRID_TIMEOUT: 120000
+
+chromenode:
+  image: selenium/node-chrome:3.141.59-neon 
+  volumes:
+    - /dev/shm:/dev/shm
+  links:
+    - seleniumhub:hub
+  environment:
+    SCREEN_WIDTH: 1280
+    SCREEN_HEIGHT: 720
