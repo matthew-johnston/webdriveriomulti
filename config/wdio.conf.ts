@@ -8,6 +8,10 @@ const chrome = {
    }
 };
 
+function services() {
+   return process.env.NODE_ENV === 'production' ? [] : [ "selenium-standalone" ];
+}
+
 const config: WebdriverIO.Config = {
    runner: "local",
 
@@ -15,7 +19,7 @@ const config: WebdriverIO.Config = {
 
    specs: [ "./build~~/tests/**/*.js" ],
 
-   services: [ "selenium-standalone" ],
+   services: services(),
 
    capabilities: {
       primaryBrowser: chrome,

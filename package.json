@@ -3,7 +3,7 @@
    "description": "Testing environment to reproduce an issue",
    "scripts": {
       "prepare": "tsc",
-      "start-grid": "docker-compose up -d --scale chromenode=1",
+      "start-grid": "docker-compose up -d --scale chromenode=2",
       "stop-grid": "docker-compose down",
       "test": "npm run prepare && wdio run ./build~~/config/wdio.conf.js"
    },
