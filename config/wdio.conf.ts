@@ -13,9 +13,9 @@ function services() {
 }
 
 const config: WebdriverIO.Config = {
-   runner: "local",
+   // runner: "local",
 
-   hostname: "localhost",
+   // hostname: "localhost",
 
    specs: [ "./build~~/tests/**/*.js" ],
 
