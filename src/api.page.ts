@@ -6,9 +6,9 @@ class NavGroup {
    constructor(private parent: WebdriverIO.Element) {}
 
    selectItemByName(name: string) {
-      this.parent.waitForExist(TIMEOUT);
-      const elem = this.parent.$(`li=${name}`);
-      elem.waitForExist(TIMEOUT);
+      this.parent.waitForExist({ timeout: TIMEOUT });
+      const elem = this.parent.$(`a=${name}`);
+      elem.waitForExist({ timeout: TIMEOUT });
       elem.click();
    }
 }
