@@ -1,4 +1,3 @@
 export class WebdriverIoPage {
-   constructor(protected theBrowser: WebdriverIO.BrowserObject) {
-   }
+  constructor(protected theBrowser: WebdriverIO.Browser) {}
 }
