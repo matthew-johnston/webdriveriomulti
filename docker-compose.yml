@@ -6,7 +6,7 @@ seleniumhub:
     GRID_TIMEOUT: 120000
 
 chromenode:
-  image: selenium/node-chrome:3.141.59-neon 
+  image: selenium/node-chrome
   volumes:
     - /dev/shm:/dev/shm
   links:
